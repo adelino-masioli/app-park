@@ -1,0 +1,79 @@
+body {
+    padding-top: 56px; /* Adjust if the header height is different */
+    padding-bottom: 70px; /* Adjust according to the footer height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Remove default body margins */
+}
+
+.content-wrapper {
+    flex: 1; /* Makes the main content occupy the remaining space */
+    overflow-y: auto; /* Adds scroll if necessary */
+    padding: 15px; /* Inner spacing */
+}
+
+.nav-header {
+    background-color: #f8f9fa; /* Background color for the header (Bootstrap light) */
+    border-bottom: 1px solid #dee2e6;
+    position: fixed; /* Fixes the header at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Ensures it stays above other content */
+}
+
+.footer {
+    flex-shrink: 0;
+    border-top: 1px solid #ddd;
+    background-color: #f8f9fa; /* Background color for the footer */
+    position: fixed; /* Fixes the footer at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px; /* Footer height */
+    padding: 0.3rem 0;
+}
+
+.nav-footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 0.8rem;
+    color: #6c757d; /* Default text color (Bootstrap secondary) */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    user-select: none;
+    padding: 5px 0; /* Inner spacing for touch targets */
+}
+
+.nav-footer i {
+    font-size: 1.4rem;
+    margin-bottom: 0.15rem;
+}
+
+.nav-footer a:hover,
+.nav-footer a.active { /* Style for active or hover links */
+    color: #0d6efd; /* Bootstrap primary color */
+}
+
+/* Ensures content does not get hidden under fixed header/footer */
+.container, .content-wrapper { /* Add .content-wrapper if used */
+    margin-top: 70px; /* Approximate height of the header plus some spacing */
+    margin-bottom: 75px; /* Approximate height of the footer plus some spacing */
+}
+
+#message .alert {
+    margin-top: 15px;
+}
