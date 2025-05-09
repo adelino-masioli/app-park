@@ -1,14 +1,14 @@
 # 🚗 Estaciona JS – Your Car Park Locator
 
-Estaciona JS (adaptado para Cordova como **Park JS**) é um aplicativo móvel simples, criado com Apache Cordova, projetado para ajudar você a lembrar onde estacionou seu carro! 🅿️
+Estaciona JS (adapted for Cordova as **Park JS**) is a simple mobile application built with Apache Cordova, designed to help you remember where you parked your car! 🅿️
 
-Seja em um estacionamento lotado ou em um edifício garagem, você pode salvar detalhes importantes como cor, setor e número da vaga. Todos os dados são armazenados localmente no seu dispositivo via LocalStorage, garantindo acesso rápido e offline.
+Whether you're in a crowded parking lot or a multi-story garage, you can save important details like color, section, and spot number. All data is stored locally on your device via LocalStorage, ensuring quick and offline access.
 
-Este projeto demonstra na prática como construir aplicativos híbridos utilizando tecnologias web.
+This project serves as a practical demonstration of building hybrid apps using web technologies.
 
 ---
 
-## 👤 Autor
+## 👤 Author
 
 **Adelino Masioli**  
 *Software Engineer*  
@@ -18,60 +18,59 @@ Este projeto demonstra na prática como construir aplicativos híbridos utilizan
 
 ---
 
-## 🎓 Orientador Acadêmico
+## 🎓 Academic Supervisor
 
 **José Joaquim Moreira**  
-*Coordenador do Projeto*  
+*Project Coordinator*  
 ✉️ jose.moreira@islagaia.pt  
 
 ---
 
-## 🏫 Contexto Acadêmico
+## 🏫 Academic Context
 
-Este projeto foi desenvolvido na unidade curricular de **Desenvolvimento de Aplicações Móveis**, no âmbito do:
+This project was developed as part of the **Mobile Application Development** course within the framework of:
 
-- **Mestrado em Engenharia de Tecnologias e Sistemas Web (METSW)**  
-- **Instituição:** ISLA Gaia – Instituto Politécnico de Gestão e Tecnologia 🇵🇹  
-- **Aluno:** Adelino Masioli
-
----
-
-## ✨ Funcionalidades
-
-- 📝 **Formulário de Registro:** Cadastre facilmente os detalhes da vaga (cor, setor e número).  
-- 💾 **Armazenamento Persistente:** Dados salvos diretamente no LocalStorage do dispositivo.  
-- 👀 **Visualização da Vaga:** Exibe os dados da última vaga salva.  
-- 🎨 **Estilo Dinâmico:** A cor de fundo da seção de visualização reflete a cor salva da vaga.  
-- 📱 **Design Mobile First:** Interface responsiva com Bootstrap 5.  
-- 🧩 **Componentes Reutilizáveis:** Inclusão de cabeçalhos e rodapés via jQuery `.load()`.  
-- 🔔 **Alertas Nativos:** Diálogos com `cordova-plugin-dialogs`.  
-- 📁 **Estrutura Organizada:** Separação clara entre os ativos web (`www`) e o código nativo Cordova.
+- **Master's Degree in Engineering of Web Technologies and Systems (METSW)**  
+- **Institution:** ISLA Gaia – Instituto Politécnico de Gestão e Tecnologia 🇵🇹  
+- **Student:** Adelino Masioli
 
 ---
 
-## 🛠️ Stack Tecnológica
+## ✨ Features
 
-- **Apache Cordova:** Framework para apps móveis híbridos.  
-- **HTML5, CSS3, JavaScript (ES6+):** Estrutura, estilo e lógica.  
-- **Bootstrap 5:** Estilo moderno e responsivo.  
-- **jQuery:** Manipulação do DOM e AJAX para includes.  
-- **Font Awesome:** Ícones.  
-- **LocalStorage API:** Armazenamento no cliente.  
-- **Plugins Cordova:**
-  - `cordova-plugin-dialogs`: Diálogos nativos.
+- 📝 **Registration Form:** Easily register your parking spot details (color, section, and number).  
+- 💾 **Persistent Storage:** Data is saved directly to the device's LocalStorage.  
+- 👀 **View Saved Spot:** Displays the details of the last saved parking spot.  
+- 🎨 **Dynamic Styling:** The background color of the "View Spot" section reflects the saved color of the spot.  
+- 📱 **Mobile-First Design:** Responsive interface styled with Bootstrap 5.  
+- 🧩 **Reusable Components:** Common headers and footers are loaded via jQuery `.load()` for a consistent user experience.  
+- 🔔 **Native Alerts:** Native dialog alerts using `cordova-plugin-dialogs`.  
+- 📁 **Organized Structure:** Clear separation between web assets (`www`) and Cordova native code.
 
 ---
 
-## 📂 Estrutura do Projeto (Principais Diretórios)
+## 🛠️ Tech Stack
 
+- **Apache Cordova:** Framework for building hybrid mobile apps.  
+- **HTML5, CSS3, JavaScript (ES6+):** Structure, styling, and logic.  
+- **Bootstrap 5:** Modern and responsive styling.  
+- **jQuery:** DOM manipulation and AJAX for includes.  
+- **Font Awesome:** Icons.  
+- **LocalStorage API:** Client-side storage.  
+- **Cordova Plugins:**
+  - `cordova-plugin-dialogs`: Native dialog alerts.
+
+---
+
+## 📂 Project Structure (Key Directories)
 
 ```
-AppPark/ (ou EstacionaJS/)
-├── config.xml              # Configurações Cordova (ID, plugins, ícones)
-├── hooks/                  # Scripts de build do Cordova
-├── platforms/              # Códigos nativos (android/, ios/)
-├── plugins/                # Plugins instalados
-├── www/                    # Ativos web (core do app)
+AppPark/ (or EstacionaJS/)
+├── config.xml              # Cordova configuration (ID, plugins, icons)
+├── hooks/                  # Cordova build scripts
+├── platforms/              # Native platform code (android/, ios/)
+├── plugins/                # Installed plugins
+├── www/                    # Web assets (core of the app)
 │   ├── css/
 │   │   └── index.css
 │   ├── img/
@@ -82,86 +81,84 @@ AppPark/ (ou EstacionaJS/)
 │   │   └── header.html
 │   ├── js/
 │   │   └── index.js
-│   ├── index.html          # Página inicial (Registrar vaga)
+│   ├── index.html          # Home Page (Register Spot)
 │   ├── place/
-│   │   └── index.html      # Página de visualização da vaga
+│   │   └── index.html      # View Saved Spot Page
 │   └── about/
-│       └── index.html      # Página sobre o app
-└── res/                    # Recursos como ícones e splash
+│       └── index.html      # About Page
+└── res/                    # Resources like icons and splash
     └── icon/
         └── android/
 ```
 
-
 ---
 
-## 🚀 Primeiros Passos
+## 🚀 Getting Started
 
-### ✅ Pré-requisitos
+### ✅ Prerequisites
 
-- Node.js e npm  
+- Node.js and npm  
 - Cordova CLI (`npm install -g cordova`)  
 - Android SDK + Java JDK  
-- (Opcional) Emulador Android ou dispositivo físico
+- (Optional) Android Emulator or physical device
 
-### ⚙️ Instalação e Execução
+### ⚙️ Installation and Running
 
-1. **Clone o repositório:**
+1. **Clone the repository:**
     ```bash
-    git clone [URL_DO_REPOSITORIO]
+    git clone [REPOSITORY_URL]
     cd AppPark
     ```
 
-2. **Adicione as plataformas:**
+2. **Add platforms:**
     ```bash
     cordova platform add android
     cordova platform add browser
     ```
 
-3. **Instale o plugin de diálogos (se necessário):**
+3. **Install the dialogs plugin (if needed):**
     ```bash
     cordova plugin add cordova-plugin-dialogs
     ```
 
-4. **Prepare o projeto:**
+4. **Prepare the project:**
     ```bash
     cordova prepare
     ```
 
-5. **Execute no navegador:**
+5. **Run in the browser:**
     ```bash
     cordova run browser
     ```
 
-6. **Build para Android:**
+6. **Build for Android:**
     ```bash
     cordova build android
     ```
 
-7. **Executar em dispositivo ou emulador:**
-    - **Emulador:**
+7. **Run on emulator or device:**
+    - **Emulator:**
       ```bash
       cordova emulate android
       ```
-    - **Dispositivo:**
+    - **Device:**
       ```bash
       cordova run android
       ```
 
 ---
 
-## 📲 Como Usar
+## 📲 How to Use
 
-1. Abra o app no navegador ou dispositivo.
-2. Use o menu superior ou o rodapé para navegar.
-3. Na página "Home", preencha os dados da vaga.
-4. Clique em "Salvar Vaga" e confirme no diálogo.
-5. Vá até "Mostrar Vaga" para visualizar os dados salvos.
-6. Acesse "Sobre" para mais informações.
+1. Open the app in the browser or on your device.
+2. Use the top menu or footer to navigate.
+3. On the "Home" page, fill in the parking spot details.
+4. Click "Save Spot" and confirm in the dialog.
+5. Go to "View Spot" to see the saved details.
+6. Go to "About" for more information.
 
 ---
 
-## 🙏 Agradecimentos
+## 🙏 Acknowledgments
 
-Este projeto foi desenvolvido com base na especificação de exercício fornecida pelo METSW (2024–2025), como parte da formação acadêmica no ISLA Gaia.
-
+This project was developed based on an exercise specification provided by METSW (2024–2025), as part of the academic training at ISLA Gaia.
